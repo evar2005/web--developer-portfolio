@@ -1,0 +1,188 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header and Navigation */
+.header {
+  background-color: #fff;
+  padding: 0 64px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  font-size: 80px;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.main-menu li {
+  list-style: none;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.main-menu a:hover {
+  color: #444;
+}
+
+.button-container {
+  display: flex;
+  gap: 16px;
+}
+
+.btn, .btn-primary {
+  padding: 10px 20px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  background-color: white;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.btn-primary {
+  background-color: #000;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #444;
+  color: white;
+}
+
+/* Hero Section (First Layout) */
+.first-layout {
+  display: flex;
+  align-items: center;
+  height: 800px;
+  padding: 0 64px;
+}
+
+.content {
+  padding-right: 80px;
+}
+
+.content > h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 70px;
+}
+
+.content > p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.btn-container {
+  padding-top: 32px;
+  display: flex;
+  gap: 8px;
+}
+
+.image img {
+  max-width: 100%;
+  height: 800px;
+}
+
+/* Second Layout */
+.second-layout {
+  display: flex;
+  align-items: center;
+  padding: 120px 64px;
+  gap: 32px;
+}
+
+.second-layout span {
+  display: block;
+  padding-bottom: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.second-layout h2 {
+  padding-bottom: 24px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.second-layout p {
+  padding-bottom: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.img img {
+  max-width: 100%;
+  height: 516px;
+}
+
+.btn-1 {
+  display: flex;
+  gap: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    padding: 0 32px;
+  }
+
+  .nav-title {
+    font-size: 40px;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .first-layout, .second-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .image img, .img img {
+    width: 100%;
+    height: 600px , 516px;
+  }
+}
